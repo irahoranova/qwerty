@@ -1,0 +1,252 @@
+/*просто ради прикола */
+
+.joke{
+	color: #ff0707;
+}
+
+/* основной код */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.wrapper {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+.center {
+	text-align: center;
+}
+.header {
+	padding-bottom: 12%;
+	background-image: url(../imgg/bg.jpg);
+}
+.head {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+/* менюшка */
+
+.nav {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+}
+.nav-item {
+	margin-left: 8px;
+}
+.nav-item:first-child {
+	margin-left: 0;
+}
+.nav-item-btn {
+	margin-left: 21px;
+}
+.nav-link {
+	color: #444444;
+	text-decoration: none;
+	padding: 11px 19px 12px;
+	border: 1px solid transparent;
+}
+.nav-link.active {
+	color: #000000;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding: 11px 19px 12px;
+}
+.nav-link:hover {
+	color: #0099ff;
+	border-radius: 5px;
+}
+
+/* все, что на картинке написано */
+
+.title{
+	padding-top: 25%;
+}
+.title p {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+.title h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 800;
+	text-transform: uppercase;
+	max-width: 720px;
+	margin: 0 auto;
+}
+.btn {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 20px 42px;
+	border-radius: 6px;
+	transition: background-color 0.5s linear, color 0.2s ease;
+} 
+.btn:hover {
+	background-color: #1b1b1b;
+	color: #fff;
+}
+
+/* раздел: почему мы? */
+
+.wrapper h1{
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 2%;
+}
+.page-gray {
+	padding-top: 80px;
+}
+.box {
+	display: flex;
+}
+.box h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 27px;
+}
+.title-h2 {
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+/* фотки с подписанными городами*/
+
+.description {
+	color: #707070;
+	line-height: 26px;
+}
+.photo {
+	display: flex;
+	margin-top: 62px;
+}
+.photo-item {
+	overflow: hidden;
+	flex-basis: 20%;
+	height: 350px;
+	position: relative;
+}
+.photo-item img {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 350px;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	z-index: -1;
+}
+.photo-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: calc(50% - 30px);
+	display: none;
+}
+.photo-text h3 {
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	margin-bottom: 14px;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.photo-item:hover {
+	background-color: rgba(139, 139, 139, 0.8);
+}
+.photo-item:hover .photo-text {
+	display: block;
+}
+
+/* отзывы*/
+
+.container {   
+	border: 2px solid #ccc;
+	background-color: #eee;
+	padding: 3%;
+	margin: 2% 15% 2% 15%;
+}
+.container img {
+	float: left; 
+	margin-right: 5%; 
+	border-radius: 15%; 
+	width: 20%;
+}
+.container span {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+/* подвал */
+
+.footer-bg {
+	background-color: #1a1a1a;
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+.footer-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	color: #c5c5c5;
+}
+.footer-list {
+	display: flex;
+	list-style-type: none;
+	padding-left: 0;
+}
+.footer-list > li {
+	padding-left: 24px;
+	margin-left: 22px;
+	border-left: 1px solid #c5c5c5;
+}
+.footer-list > li:first-child {
+	border-left: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.footer-list > li > a {
+	text-decoration: none;
+	color: #c5c5c5;
+}
+
+/* скрол на вверх страницы */
+
+#toTop {
+	width:100px;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:10px;
+	position:fixed;
+	bottom:25px; 
+	right:25px;
+	display:none;
+	color:#333;
+	font-size:12px;
+}
+
+
+
+
+	
